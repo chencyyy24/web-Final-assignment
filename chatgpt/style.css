@@ -1,0 +1,153 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: white;
+    color: black;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav a {
+    margin-left: 32px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.nav a:hover {
+    opacity: 0.5;
+}
+
+/* Sections */
+.section {
+    padding: 120px 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Home full-screen */
+.full {
+    background: white;
+    text-align: center;
+}
+
+.title {
+    font-size: 58px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 12px 28px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1.2s ease;
+}
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Scale-in */
+.scale-in {
+    transform: scale(0.9);
+}
+.scale-visible {
+    transform: scale(1);
+}
+
+/* Products */
+.center-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.product-card {
+    border: 1px solid black;
+    padding: 40px;
+    transition: 0.4s;
+    text-align: center;
+    background: white;
+    transform-style: preserve-3d;
+}
+
+.product-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+/* About */
+.gray {
+    background: #f5f5f5;
+}
+
+.text {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+    opacity: 0.7;
+    margin-top: 40px;
+}

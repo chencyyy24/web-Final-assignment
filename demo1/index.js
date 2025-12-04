@@ -7,7 +7,7 @@ function csss(i) {
         top: items[i].offsetTop,
         behavior: "smooth"
     })
-    setTimeout(() => yes = false, 400);
+    setTimeout(() => yes = false, 600);
 }
 addEventListener('wheel', (e) => {
     if (yes) {

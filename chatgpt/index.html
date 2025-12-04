@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QC Minimal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="logo">QC</div>
+        <nav class="nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#products" class="nav-link">Products</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section full fade-in scale-in">
+        <div class="content">
+            <h1 class="title">Experience The Future</h1>
+            <p class="subtitle">Minimal. Elegant. Powerful.</p>
+            <button class="btn" onclick="scrollToSection('products')">Explore Products</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section fade-in scale-in">
+        <h2 class="center-title">Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card" data-target="air/air.html">
+                <h3>QC Air</h3>
+                <p>Ultra-light portable device.</p>
+            </div>
+
+            <div class="product-card" data-target="vision/vision.html">
+                <h3>QC Vision</h3>
+                <p>Immersive AR experience.</p>
+            </div>
+
+            <div class="product-card" data-target="max/max.html">
+                <h3>QC Max</h3>
+                <p>Performance without compromise.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section gray fade-in scale-in">
+        <h2 class="center-title">About Us</h2>
+        <p class="text">
+            We create high-end digital products with minimal design and
+            innovative engineering. Inspired by simplicity and driven by precision.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-in scale-in">
+        <h2 class="center-title">Contact Us</h2>
+        <p class="text">Email: support@qcstudio.com</p>
+        <p class="text">We respond within 24 hours.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2025 QC Studio. All rights reserved.
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
